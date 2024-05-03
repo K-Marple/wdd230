@@ -16,14 +16,14 @@ header {
     padding: 2rem;
     display: flex;
     text-align: right;
+    justify-content: center;
 }
 
 img {
     border-radius: 10px;
-    max-width: 20%;
+    max-width: 40%;
     height: auto;
     display: block;
-    margin-left: 20%;
 }
 
 .name {
@@ -42,6 +42,14 @@ nav {
     font-style: italic;
 }
 
+nav ul li {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+}
+
 a {
     color: #2E2118;
     padding: 15px;
@@ -58,6 +66,9 @@ nav a:hover,
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
     height: 100%;
     padding: 1rem;
 }
@@ -79,14 +90,13 @@ h3 {
     display: block;
     width: 80%;
     margin: 15px auto;
-    padding: 0px 0px 2px;
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
     border-color: #6F734C;
 }
 
-ul {
+section ul {
     width: 80%;
     list-style-type: none;
     text-align: left;
