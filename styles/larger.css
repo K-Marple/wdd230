@@ -7,7 +7,7 @@
         max-width: 20%;
     }
 
-    nav ul {
+    nav ul li {
         display: flex;
         justify-content: space-around;
     }
