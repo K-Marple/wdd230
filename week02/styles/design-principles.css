@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Salsa&display=swap');
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    text-align: center;
+    font-family: "Salsa", cursive;
+    color: #2E2118;
+}
+
+header {
+    background: #6F734C;
+    padding: 2rem;
+    grid-column: 1/3;
+    text-align: center;
+    justify-content: center;
+    font-family: "Merienda", cursive;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    border: 1px solid #6F734C;
+
+}
+
+a {
+    color: #2E2118;
+    padding: 15px;
+}
+
+a:hover {
+    color: #C44536;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: 90%;
+    padding: 1rem;
+}
+
+h3 {
+    background: #C44536;
+    padding: 15px;
+    margin-top: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: "Merienda", cursive;
+}
+
+.card {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #6F734C;
+}
+
+section {
+    width: 80%;
+    list-style-type: none;
+    text-align: left;
+}
+
+p {
+    padding: 1rem;
+}
+
+footer {
+    background: #6F734C;
+    padding: 2rem;
+    grid-column: 1 / 3;
+    font-family: "Merienda", cursive;
+    color: #fff;
+}
+
+.copyright,
+.author {
+    text-align: left;
+    padding-left: 5%;
+    font-style: italic;
+}
+
+.lastModified {
+    text-align: right;
+    padding-right: 5%;
+}
