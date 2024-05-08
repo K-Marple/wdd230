@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Kurale&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    display: grid;
+    text-align: center;
+    font-family: "Mohave", sans-serif;
+    background: #DFE3E2;
+}
+
+header,
+header h2 {
+    background: #226452;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #DFE3E2;
+}
+
+h2,
+h3 {
+    font-size: "Alegreya Sans SC", sans-serif;
+}
+
+h2 {
+    background: #78C092;
+    padding: 1rem;
+}
+
+/* Style Guide */
+.colors {
+    width: 80%;
+    margin: auto;
+}
+
+.colors td {
+    width: 15%;
+    height: 3em;
+}
+
+.primary-color {
+    background: #226452;
+    color: #DFE3E2;
+}
+
+.secondary-color {
+    background: #FCDF89;
+}
+
+.accent1 {
+    background: #794348;
+    color: #DFE3E2;
+}
+
+.accent2 {
+    background: #78C092;
+}
+
+.accent3 {
+    background: #DFE3E2;
+}
+
+.primary-font {
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.secondary-font {
+    font-family: "Mohave", sans-serif;
+}
+
+.tertiary-font {
+    font-family: "Kurale", serif;
+}
+
+/* Wireframe */
+#wireframe {
+    display: grid;
+}
+
+#home {
+    grid-column: 1/2;
+}
+
+#discover {
+    grid-column: 2/3;
+}
+
+#directory {
+    grid-column: 3/4;
+}
+
+#join {
+    grid-column: 4/5;
+}
+
+img {
+    width: 80%;
+}
