@@ -4,12 +4,27 @@
     }
 
     img {
-        max-width: 20%;
+        max-width: 40%;
     }
 
     nav ul li {
         display: flex;
         justify-content: space-around;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        background: #AAAD85;
+        padding: 15px;
+    }
+
+    .navigation a {
+        display: block;
     }
 
     main {
