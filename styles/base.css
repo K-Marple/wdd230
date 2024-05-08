@@ -29,7 +29,7 @@ img {
 .name {
     grid-column: 2/3;
     padding-left: 50px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Merienda", cursive;
     align-self: center;
     text-align: left;
