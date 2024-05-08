@@ -81,7 +81,7 @@ nav ul li {
 
 a {
     color: #2E2118;
-    padding: 15px;
+    padding: 5px;
     text-decoration: none;
 }
 
@@ -129,6 +129,10 @@ section ul {
     width: 80%;
     list-style-type: none;
     text-align: left;
+}
+
+section li {
+    padding: 5px;
 }
 
 iframe {
