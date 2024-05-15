@@ -86,8 +86,76 @@ header {
     color: #000;
 }
 
+.navigation {
+    display: flex;
+    grid-template-columns: 1fr 3fr 1fr;
+    background: var(--accent2-color);
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin-top: -5px;
+}
+
+.navigation a {
+    grid-column: 2/3;
+    text-align: center;
+    font-family: var(--teriary-font);
+    font-size: 18px;
+    font-style: italic;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.assignment:hover {
+    color: var(--secondary-color);
+}
+
 main {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: var(--secondary-font);
+}
+
+.event-card {
+    float: left;
+    width: 90%;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+.event-card img {
+    width: 100%;
+}
+
+.event1,
+.event2 {
+    border: solid var(--accent1-color);
+    margin: 3rem;
+    padding: 10px 10px 0px 10px;
+    background: var(--accent1-color);
+    color: var(--accent3-color);
+}
+
+.business-card {
+    float: right;
+    width: 85%;
+    margin-top: 3rem;
+    justify-self: center;
+}
+
+.business1,
+.business2,
+.business3,
+.business4 {
+    border: 10px solid var(--primary-color);
+    margin: 2rem;
+    padding: 0px 10px;
+}
+
+h2 {
+    font-family: var(--primary-font);
 }
