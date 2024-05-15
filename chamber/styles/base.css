@@ -18,11 +18,6 @@ body {
     background: var(--accent3-color);
 }
 
-#background-img {
-    background-image: url(../images/clovis-sign.jpg);
-    background-size: cover;
-}
-
 header {
     display: flex;
     background: var(--primary-color);
