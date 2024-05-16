@@ -159,3 +159,23 @@ main {
 h2 {
     font-family: var(--primary-font);
 }
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: var(--primary-color);
+}
+
+footer p {
+    color: var(--accent3-color);
+    padding: 2rem;
+    font-family: var(--secondary-font);
+    font-size: larger;
+}
+
+#contact,
+#address {
+    font-size: x-large;
+    justify-self: center;
+}
