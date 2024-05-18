@@ -13,8 +13,27 @@
         --accent3-color: #DFE3E2;
     }
 
+    header {
+        display: grid;
+        grid-template-columns: 440px auto;
+    }
+
+    #logo {
+        flex-direction: unset;
+        width: 360px;
+    }
+
+    #name {
+        align-self: flex-end;
+        margin-left: -50px;
+    }
+
     #menu {
         display: none;
+    }
+
+    .button {
+        font-size: x-large;
     }
 
     .navigation {
@@ -26,5 +45,26 @@
 
     .navigation a {
         display: block;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    .event-card {
+        grid-column: unset;
+        float: left;
+    }
+
+    .business-card {
+        display: unset;
+        grid-column: unset;
+        float: right;
+    }
+
+    #map {
+        grid-row: 2/3;
     }
 }

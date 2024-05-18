@@ -27,4 +27,13 @@
     .navigation a {
         display: block;
     }
+
+    main {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    #project-info {
+        padding: 0px 150px;
+    }
 }
