@@ -1,0 +1,30 @@
+@media screen and (min-width:750px) {
+    :root {
+        /* fonts */
+        --primary-font: "Alegreya Sans SC", sans-serif;
+        --secondary-font: "Mohave", sans-serif;
+        --teriary-font: "Kurale", serif;
+
+        /* colors */
+        --primary-color: #226452;
+        --secondary-color: #FCDF89;
+        --accent1-color: #794348;
+        --accent2-color: #78C092;
+        --accent3-color: #DFE3E2;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-evenly;
+        background: var(--accent2-color);
+        padding: 15px;
+    }
+
+    .navigation a {
+        display: block;
+    }
+}
