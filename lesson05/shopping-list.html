@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        // Create variables for elements in div
+        const list = document.querySelector("ul");
+        const input = document.querySelector("input");
+        const button = document.querySelector("button");
+
+        // Create function to run when button is clicked
+        button.addEventListener("click", () => {
+            // Store value in the input and then clear it
+            const item = input.value;
+            input.value = "";
+
+            // Create new elements
+            const listItem = document.createElement("li");
+            const listText = document.createElement("span");
+            const listButton = document.createElement("button");
+
+            // Append so span and button are children of list
+            listItem.appendChild(listText);
+            listItem.appendChild(listButton);
+
+            // Set text content for span and button
+            listText.textContent = item;
+            listButton.textContent = "Delete";
+
+            // Append listItem as child of list
+            list.appendChild(listItem);
+
+            // Create function to run when delete button is clicked
+            listButton.addEventListener("click", () => {
+                list.removeChild(listItem);
+            });
+
+            // Focus input on element ready for next item
+            input.focus();
+        });
+    </script>
+</body>
+
+</html>
