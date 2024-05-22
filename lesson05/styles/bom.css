@@ -10,17 +10,23 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Acme, Arial, sans-serif;
+    background-image: url("../images/bom.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 h1 {
     font-size: 1.5rem;
+    color: #388577;
+    background: #1F1D20;
+    padding: 0.5rem;
 }
 
 main {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background-color: #ddd;
+    background-color: #c6c3be;
     display: flex;
     flex-direction: column;
 }
