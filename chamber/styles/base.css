@@ -109,12 +109,14 @@ header {
 
 #logo img,
 #footer-logo img {
+    width: 50%;
     padding: 0px 10px;
 }
 
 #name,
 #footer-name {
     padding: 10px;
+    font-size: small;
 }
 
 #name h1,

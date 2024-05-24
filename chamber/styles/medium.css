@@ -13,6 +13,16 @@
         --accent3-color: #DFE3E2;
     }
 
+    #logo img,
+    #footer-logo img {
+        width: unset;
+    }
+
+    #name,
+    #footer-name {
+        font-size: unset;
+    }
+
     #menu {
         display: none;
     }
