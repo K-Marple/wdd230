@@ -18,12 +18,14 @@
         grid-template-columns: 440px auto;
     }
 
-    #logo {
+    #logo,
+    #footer-logo {
         flex-direction: unset;
         width: 360px;
     }
 
-    #name {
+    #name,
+    #footer-name {
         align-self: flex-end;
         margin-left: -50px;
     }

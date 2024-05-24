@@ -38,7 +38,7 @@
         </div>
     </div>
     <div id="menu-container">
-        <button id="menu" class="closed"></button>
+        <button id="menu" class="closed"><span id="btn-content"></span></button>
     </div>
     <nav class="navigation">
         <a href="#">Home</a>
@@ -90,6 +90,19 @@
             </div>
             <div id="weather">
                 <h3>Weather Forecast</h3>
+                <p>Partly Cloudy 🌤️</p>
+                <table class="temp">
+                    <tr>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Feels Like</th>
+                    </tr>
+                    <tr>
+                        <td>75°F</td>
+                        <td>62°F</td>
+                        <td>68°F</td>
+                    </tr>
+                </table>
                 <img src="images/noaa.png" alt="National Oceanic and Atmospheric Administration">
             </div>
         </div>
@@ -98,9 +111,9 @@
         <div id="contact">
             <p>Phone: 559-796-3185 <br> oldtownclovis@cofc.com</p>
         </div>
-        <div id="logo">
+        <div id="footer-logo">
             <img src="images/old-town-logo.png" alt="Old Town Clovis">
-            <div id="name">
+            <div id="footer-name">
                 <h2>Old Town Clovis <br> Chamber of Commerce</h2>
             </div>
         </div>
@@ -113,8 +126,7 @@
             <p class="project">WDD 230 Project</p>
             <p class="lastModified">Last Modified Date: <br><span id="lastModified"></span></p>
         </div>
-        <script src="scripts/getdates.js"></script>
-        <script src="scripts/menu.js"></script>
+        <script src="scripts/chamber.js"></script>
     </footer>
 </body>
 
