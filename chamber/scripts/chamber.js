@@ -19,3 +19,12 @@ hamMenu.addEventListener('click', () => {
     navigation.classList.toggle('closed');
     hamMenu.classList.toggle('closed');
 });
+
+
+// dark mode
+const modeBtn = document.querySelector("#switch");
+const main = document.querySelector("main");
+
+modeBtn.addEventListener("click", () => {
+    main.classList.toggle("dark");
+});
