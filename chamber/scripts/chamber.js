@@ -14,7 +14,6 @@ document.getElementById("lastModified").innerHTML = lastMod;
 const hamMenu = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-// button clicking
 hamMenu.addEventListener('click', () => {
     navigation.classList.toggle('closed');
     hamMenu.classList.toggle('closed');
@@ -23,8 +22,8 @@ hamMenu.addEventListener('click', () => {
 
 // dark mode
 const modeBtn = document.querySelector("#switch");
-const main = document.querySelector("main");
+const body = document.querySelector("body");
 
-modeBtn.addEventListener("click", () => {
-    main.classList.toggle("dark");
+modeBtn.addEventListener("click", function () {
+    body.classList.toggle("dark");
 });
