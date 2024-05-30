@@ -7,10 +7,19 @@
     <title>Responsive Images - Temples</title>
     <meta name="description" content="Responsive image exercise with LDS temples.">
     <meta name="author" content="Kayli Marple">
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 
 <body>
-
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="San Diego Temple" width="1280" height="640">
+            </picture>
+        </div>
+    </main>
 </body>
 
 </html>
