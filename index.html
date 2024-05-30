@@ -22,7 +22,7 @@
 
 <body>
     <header>
-        <img class="image" src="images/portrait.JPG" alt="Kayli with her husband">
+        <img class="image" src="images/portrait.webp" alt="Kayli with her husband">
         <h1 class="name">Kayli Marple</h1>
     </header>
     <div id="menu-container">
@@ -39,11 +39,15 @@
         </a>
     </nav>
     <main>
-        <picture>
-            <source srcset="images/hero-small.webp" media="(max-width:775px)">
-            <img src="images/hero-large.webp" alt="San Diego Temple" width="2" height="1">
-            <span>San Diego Temple</span>
-        </picture>
+        <div class="hero-box">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width:775px)">
+                <img src="images/hero-large.webp" alt="Sapporo Temple" width="2" height="1">
+            </picture>
+            <div class="hero-text">
+                <p>Sapporo Japan Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>

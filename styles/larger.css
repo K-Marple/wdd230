@@ -33,6 +33,15 @@
         grid-template-rows: auto;
     }
 
+    .hero-text {
+        top: 5rem;
+        left: 5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
     h2 {
         grid-column: 1/3;
     }
