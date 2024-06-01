@@ -306,25 +306,17 @@ iframe {
 
 #weather img {
     width: 90%;
-    grid-row: 2/4;
+    grid-row: 2/8;
     padding: 0px 20px 20px 20px;
 }
 
+/* #weather-icon {
+    width: 100px;
+    height: 100px;
+} */
+
 #weather p {
     grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-.temp {
-    grid-column: 2/3;
-    padding-bottom: 1rem;
-    justify-self: center;
-}
-
-.temp td {
-    padding: 0px 30px;
 }
 
 footer {
