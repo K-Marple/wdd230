@@ -363,6 +363,10 @@ footer p {
     grid-column: 4/5;
 }
 
+picture {
+    width: 100%;
+}
+
 .hero-temp-text::after {
     content: "Small";
     position: absolute;
