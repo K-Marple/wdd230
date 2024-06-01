@@ -370,8 +370,3 @@ footer p {
 .lastModified {
     grid-column: 4/5;
 }
-
-.dark {
-    background: #000;
-    color: var(--accent3-color);
-}
