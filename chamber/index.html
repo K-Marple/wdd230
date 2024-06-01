@@ -38,7 +38,15 @@
     </header>
     <div id="hero">
         <div id="hero-box">
-            <img id=hero-img src="images/fire-station-medium.webp" alt="Old Town Clovis Fire Station">
+            <picture>
+                <source srcset="images/temp-hero-small.webp" media="(max-width:750px)">
+                <source srcset="images/temp-hero-medium.webp" media="(max-width:1000px)">
+                <img src="images/temp-hero-large.webp" alt="Signing Papers" width="1280" height="731">
+            </picture>
+            <div>
+                <p class="hero-temp-text"></p>
+            </div>
+            <!-- <img id=hero-img src="images/fire-station-medium.webp" alt="Old Town Clovis Fire Station"> -->
         </div>
     </div>
     <div id="menu-container">

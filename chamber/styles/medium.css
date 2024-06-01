@@ -13,11 +13,6 @@
         --accent3-color: #DFE3E2;
     }
 
-    #logo img,
-    #footer-logo img {
-        width: unset;
-    }
-
     #name,
     #footer-name {
         font-size: unset;
@@ -45,5 +40,10 @@
 
     #project-info {
         padding: 0px 150px;
+    }
+
+    .hero-temp-text::after {
+        content: "Medium";
+        top: 550px;
     }
 }

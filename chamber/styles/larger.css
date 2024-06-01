@@ -24,6 +24,11 @@
         width: 360px;
     }
 
+    #logo img,
+    #footer-logo img {
+        width: unset;
+    }
+
     #name,
     #footer-name {
         align-self: flex-end;
@@ -68,5 +73,9 @@
 
     #map {
         grid-row: 2/3;
+    }
+
+    .hero-temp-text::after {
+        content: "Large";
     }
 }
