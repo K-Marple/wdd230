@@ -44,6 +44,7 @@ body {
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 34px;
+    border: solid 1px var(--primary-color);
 }
 
 .slider.round::before {
