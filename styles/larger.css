@@ -33,6 +33,10 @@
         grid-template-rows: auto;
     }
 
+    .card {
+        grid-column: unset;
+    }
+
     .hero-text {
         top: 5rem;
         left: 5rem;
