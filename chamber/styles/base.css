@@ -364,7 +364,7 @@ footer p {
     grid-column: 4/5;
 }
 
-picture {
+/* picture {
     width: 100%;
 }
 
@@ -377,4 +377,4 @@ picture {
     padding: 20px;
     background: var(--primary-color);
     color: var(--secondary-color);
-}
+} */
