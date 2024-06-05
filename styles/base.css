@@ -163,6 +163,10 @@ section li {
     padding: 5px;
 }
 
+.warning {
+    color: #C44536;
+}
+
 iframe {
     grid-row: 5/6;
     margin: 40px 0px 20px;
