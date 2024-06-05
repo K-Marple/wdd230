@@ -64,6 +64,10 @@ li {
     justify-content: space-between;
 }
 
+.delete {
+    width: fit-content;
+}
+
 @media only screen and (min-width: 32.5em) {
     h1 {
         font-size: 2rem;
