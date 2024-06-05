@@ -43,7 +43,8 @@
     }
 
     .hero-text h3 {
-        font-size: larger;
+        font-size: x-large;
+        padding: 1rem;
     }
 
     h2 {
