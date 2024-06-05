@@ -7,6 +7,7 @@
     <title>Lazy Loading</title>
     <meta name="description" content="Page of images to test usage of lazy loading">
     <meta name="author" content="Kayli Marple">
+    <link rel="stylesheet" href="styles/lazyload.css">
 </head>
 
 <body>
@@ -14,16 +15,20 @@
         <h1>Chilnualna Falls in Yosemite</h1>
     </header>
     <main>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img loading="lazy" width="400" height="600" src="images/front-falls.JPG" alt="Front view of Chilnualna Falls">
+        <img loading="lazy" width="400" height="600" src="images/side-falls.JPG" alt="Side view of the falls">
+        <img loading="lazy" width="400" height="600" src="images/size-zoom-falls.JPG"
+            alt="Zoomed in view of the side of falls">
+        <img loading="lazy" width="400" height="600" src="images/top-falls.JPG" alt="View of the top of the falls">
+        <img loading="lazy" width="400" height="600" src="images/triple-falls.JPG"
+            alt="Another view of the top of the falls">
+        <img loading="lazy" width="400" height="600" src="images/zoom-falls.JPG"
+            alt="Zoomed in view of the top of the falls">
     </main>
     <footer>
-        <p>© Kayli Marple</p>
-        <p>Date Last Modified: <span id="lastModified"></span></p>
+        <p>© Kayli Marple | WDD230</p>
+        <p class="lastModified">Date Last Modified: <span id="lastModified"></span></p>
+        <script src="scripts/lazyload.js"></script>
     </footer>
 </body>
 

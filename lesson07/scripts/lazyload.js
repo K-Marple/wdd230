@@ -1,9 +1,6 @@
 //last modified
-// set copyright year
+// get year
 const year = new Date();
-const copyrightYear = year.getFullYear();
-
-document.getElementById("copyrightYear").innerHTML = copyrightYear;
 
 // last modified
 let lastMod = new Date(document.lastModified);
