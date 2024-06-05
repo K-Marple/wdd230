@@ -120,19 +120,19 @@ picture img {
 
 .hero-text {
     position: absolute;
-    top: 5rem;
-    left: 5rem;
+    top: 2rem;
+    left: 2rem;
     padding: 1rem;
     background-color: #E2DCCD;
     border-radius: 5px;
     box-shadow: 0 0 3rem #B0B1BD;
 }
 
-.hero-text p {
+.hero-text h3 {
     padding: .25rem;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: "Merienda", cursive;
+    background: unset;
+    margin: .25rem;
+    font-size: medium;
 }
 
 h3 {

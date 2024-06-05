@@ -42,8 +42,8 @@
         left: 5rem;
     }
 
-    .hero-text p {
-        font-size: 1.5rem;
+    .hero-text h3 {
+        font-size: larger;
     }
 
     h2 {
