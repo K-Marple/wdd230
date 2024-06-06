@@ -46,4 +46,24 @@
         content: "Medium";
         top: 550px;
     }
+
+    /* Discovery Page */
+    #discover-main {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-gap: 1rem;
+    }
+
+    #main-content {
+        grid-column: 2/3;
+    }
+
+    #sidebar-content {
+        grid-column: 1/2;
+    }
+
+    #main-content img:hover {
+        opacity: 0.5;
+        border-radius: 25%;
+    }
 }
