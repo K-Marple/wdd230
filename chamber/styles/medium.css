@@ -40,6 +40,11 @@
 
     #project-info {
         padding: 0px 150px;
+        flex-direction: row;
+    }
+
+    #project-info p {
+        padding: 30px;
     }
 
     .hero-temp-text::after {
