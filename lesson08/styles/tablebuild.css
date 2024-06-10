@@ -1,0 +1,48 @@
+:root {
+    --border: #858585;
+    --shadow: #333333;
+    --background: #FAA916;
+    --background2: #F4D58D;
+    --zebra: #E0E0E0;
+}
+
+table {
+    margin: 20px auto;
+    border: 2px solid var(--border);
+    border-collapse: collapse;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--background);
+    font-size: .9rem;
+}
+
+#services {
+    background: var(--background);
+    padding: 20px;
+}
+
+th,
+td {
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+}
+
+#blank,
+#basic,
+#premium,
+#deluxe {
+    background: var(--background2);
+    padding: 15px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background: var(--zebra);
+}
