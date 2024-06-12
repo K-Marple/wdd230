@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Salsa&display=swap');
+
+:root {
+    --text: #2E2118;
+    --border: #6F734C;
+    --btnborder: #AAAD85;
+    --backColor: #C44536;
+    --heading-font: "Merienda", cursive;
+    --font: "Salsa", cursive;
+}
+
+.form {
+    margin: 3rem 20rem;
+    padding: .5rem 2;
+    font-family: var(--font);
+    color: var(--text);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+}
+
+.form h1 {
+    background: var(--backColor);
+    font-family: var(--heading-font);
+    padding: 15px;
+    margin-top: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.caform {
+    padding: 0 2rem;
+    text-align: left;
+}
+
+#errormessage {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--text);
+    font-size: .9rem;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.form input[type="range"] {
+    display: block;
+    accent-color: var(--border);
+    padding: 1rem
+}
+
+.form input[type="submit"] {
+    border: 5px solid var(--btnborder);
+    border-radius: 5px;
+    background: #fff;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2%;
+}
+
+.form input[type="submit"]:hover {
+    background: var(--btnborder);
+}
+
+.form input:required {
+    border-left: 8px solid var(--backColor);
+}
+
+@media screen and (max-width:1200px) {
+    .form {
+        margin: 3rem 8rem;
+    }
+
+    .caform {
+        padding: 0 1rem;
+    }
+
+    .form input[type="text"],
+    .form input[type="password"],
+    .form input[type="email"],
+    .form input[type="submit"] {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .form {
+        margin: 3rem 3rem;
+    }
+
+    .caform {
+        padding: 0 .75rem;
+    }
+
+    .form input[type="text"],
+    .form input[type="password"],
+    .form input[type="email"],
+    .form input[type="submit"] {
+        max-width: 190px;
+    }
+}
