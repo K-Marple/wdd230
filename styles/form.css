@@ -3,8 +3,8 @@
 :root {
     --text: #2E2118;
     --border: #6F734C;
-    --btnborder: #AAAD85;
     --backColor: #C44536;
+    --backColor2: #AAAD85;
     --heading-font: "Merienda", cursive;
     --font: "Salsa", cursive;
 }
@@ -57,11 +57,28 @@
 
 .form input[type="range"] {
     display: block;
-    accent-color: var(--border);
+    appearance: none;
+    width: 60%;
+    max-width: 400px;
+    height: 50px;
+    background: var(--backColor2);
+    border-radius: 50px;
+}
+
+#rate::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--text);
+    border-radius: 50%;
+}
+
+#values {
+    appearance: show;
 }
 
 .form input[type="submit"] {
-    border: 5px solid var(--btnborder);
+    border: 5px solid var(--border);
     border-radius: 5px;
     background: #fff;
     padding: .8rem;
@@ -71,7 +88,7 @@
 }
 
 .form input[type="submit"]:hover {
-    background: var(--btnborder);
+    background: var(--backColor2);
 }
 
 .form input:required {
