@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", handleSubmit);
 });
 
-// Range
+// Show and change range number
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("rate");
 

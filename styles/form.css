@@ -58,7 +58,6 @@
 .form input[type="range"] {
     display: block;
     accent-color: var(--border);
-    padding: 1rem
 }
 
 .form input[type="submit"] {
