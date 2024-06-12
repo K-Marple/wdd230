@@ -1,29 +1,24 @@
 // create variables
 const displayVisits = document.querySelector(".visits");
 
-//get stored value
-let dateVisit = Date(window.localStorage.getItem("dateLastVisit"));
-
-const lastVisit = localStorage.getItem(dateVisit);
+// get stored value
+let visitKey = "dateLastVisit-ls";
+let lastVisit = Number(window.localStorage.getItem(visitKey)) || 0;
 
 // if statement
-if (!lastVisit) {
-    displayVisits.textContent = "Welcome! Let us know if you have any questions.";
-    console.log(`dateVisit: ${dateVisit}`);
-    console.log(`lastVisit: ${lastVisit}`);
-} else if (lastVisit > Date.now()) {
-    const lastVisitDate = Date.parse(lastVisit);
-    displayVisits.textContent = "Back so soon! Awesome!";
-    console.log(`lastVisitDate: ${lastVisitDate}`);
+if (lastVisit !== 0) {
+    let today = new Date();
+    let last = new Date(lastVisit);
+    let elapseTime = (today - last) / (1000 * 60 * 60 * 24);
+
+    if (elapseTime >= 1) {
+        displayVisits.textContent = `You last visited ${Math.floor(elapseTime)} days ago.`;
+    } else {
+        displayVisits.textContent = "Back so soon! Awesome!";
+    }
 } else {
-    const today = new Date();
-    console.log(`today: ${today}`);
-
-    const elapseTime = today - lastVisitDate;
-    const daysAgo = Math.floor(elapseTime / (1000 * 60 * 60 * 24));
-
-    displayVisits.textContent = `You last visited ${daysAgo} days ago.`;
+    displayVisits.textContent = "Welcome! Let us know if you have any questions.";
 }
 
 // store dates in localStorage (key=dateVisit-ls) (ls=localStorage)
-localStorage.setItem("dateLastVisit", dateVisit);
+localStorage.setItem("visitKey", Date.now());
