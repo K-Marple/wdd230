@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Town Clovis Chamber of Commerce</title>
+    <meta name="description" content="Old Town Clovis Chamber of Commerce site project by Kayli Marple.">
+    <meta name="author" content="Kayli Marple">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Old Town Clovis Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://k-marple.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://live.staticflickr.com/65535/51253550326_fca881b4b5_b.jpg">
+</head>
+
+<body>
+    <label id="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <header>
+        <div id="logo">
+            <img src="images/old-town-logo.webp" alt="Old Town Clovis">
+            <div id="name">
+                <h1>Old Town Clovis</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        </div>
+        <div id="buttons">
+            <a class="button" href="join.html">Login</a>
+            <a class="button" href="join.html">Become a Member!</a>
+        </div>
+    </header>
+    <div id="menu-container">
+        <button id="menu" class="closed"><span id="btn-content"></span></button>
+    </div>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join Us</a>
+    </nav>
+    <main id="join-main">
+        <h1>Join the Old Town Clovis Chamber of Commerse</h1>
+        <div id="member-levels">
+            <h2>Membership Levels</h2>
+            <div class="levelnp">
+                <h3>NP Membership</h3>
+                <p>The Non-Profit Membership is specifically designed for non-profit organizations. It provides access
+                    to essential features and resources to support their mission-driven work.</p>
+                <p>This membership level is completely free as a gesture of support for non-profit initiatives.</p>
+            </div>
+            <div class="levelb">
+                <h3>Bronze Membership</h3>
+                <p>The Bronze Membership offers basic benefits and limited access to additional services. It is suitable
+                    for individuals or small businesses looking for essential features. Benefits include a listing in
+                    our directory, discounted prices at special events, display brochures or cards in our lobby, access
+                    to member-only events, your events on the Chamber calendar, one free ad annually, and an invite to
+                    the annual Awards Benefit.</p>
+                <p>The Bronze Membership costs $40 per month.</p>
+            </div>
+            <div class="levels">
+                <h3>Silver Membership</h3>
+                <p>The Silver Membership provides enhanced features, priority support, and access to exclusive content.
+                    It is ideal for those seeking a more comprehensive experience. Benefits include all in the Bronze
+                    Membership plus an additional free ad annually.</p>
+                <p>The Silver Membership is priced at $80 per month.</p>
+            </div>
+            <div class="levelg">
+                <h3>Gold Membership</h3>
+                <p>The Gold Membership is the premium tier, offering all features, personalized assistance, and early
+                    access to new features. It is perfect for power users and businesses. Benefits include all of the
+                    Silver Membership benefits and an advertising package including a third free annual ad, recognition
+                    as Gold Member at events, exclusive access to Chamber hall, and an invite to the annual golf
+                    tournament and luncheon. </p>
+                <p>The Gold Membership comes at $200 per month.</p>
+            </div>
+        </div>
+        <div id="jform">
+            <div id="errormessage"></div>
+            <form method="get" action="thankyou.html" class="join">
+                <h6>* indicates a required field</h6>
+                <fieldset>
+                    <legend>Personal Infomation</legend>
+                    <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label>Email* <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                            required></label>
+                    <label>Mobile Phone Number* <input type="tel" id="phone" name="phone" placeholder="5556667788"
+                            required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization Name* <input type="text" id="business" name="business"
+                            required></label>
+                    <label>Title/Position* <input type="text" id="position" name="position"
+                            placeholder="Your title or position in your organization" required></label>
+
+                    <div>Membership Level*</div>
+                    <label><input type="radio" id="np" name="membership" value="np">NP Membership</label>
+                    <label><input type="radio" id="bronze" name="membership" value="bronze">Bronze Membership</label>
+                    <label><input type="radio" id="silver" name="membership" value="silver">Silver Membership</label>
+                    <label><input type="radio" id="gold" name="membership" value="gold">Gold Membership</label>
+                    <label>Description of Business or Organization<textarea id="description" name="description"
+                            placeholder="Please provide a brief description of the business or organization you represent."></textarea></label>
+                </fieldset>
+                <input type="hidden" id="date" name="date">
+                <button type="submit" id="submit">Join Old Town Clovis</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <p>Phone:<br>559-796-3185 <br> otc@cofc.com</p>
+        </div>
+        <div id="footer-logo">
+            <img src="images/old-town-logo.webp" alt="Old Town Clovis">
+            <div id="footer-name">
+                <h2>Old Town Clovis <br> Chamber of Commerce</h2>
+            </div>
+        </div>
+        <div id="address">
+            <p>559 Pollasky Ave<br>Clovis, CA 93612</p>
+        </div>
+        <div id="project-info">
+            <p class="copyright">&copy;<span id="copyrightYear"></span> Old Town Clovis Chamber</p>
+            <p class="author">Kayli Marple</p>
+            <p class="project">WDD 230 Project</p>
+            <p class="lastModified">Last Modified Date: <span id="lastModified"></span></p>
+        </div>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/dark-mode.js"></script>
+        <script src="scripts/join-form.js"></script>
+    </footer>
+</body>
+
+</html>

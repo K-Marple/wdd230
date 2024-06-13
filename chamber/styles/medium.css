@@ -72,4 +72,35 @@
         border-radius: 25%;
         filter: grayscale(100%);
     }
+
+    /* Join Page */
+    #join-main {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #member-levels {
+        margin-right: 1rem;
+        grid-column: 1/2;
+    }
+
+    #jform {
+        margin-left: 1rem;
+        grid-column: 2/3;
+    }
+
+    .join h6 {
+        padding-right: 20%;
+    }
+
+    .levelnp h3,
+    .levelb h3,
+    .levels h3,
+    .levelg h3 {
+        margin: 10px 20% 0 5px;
+    }
+
+    .join button {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
 }
