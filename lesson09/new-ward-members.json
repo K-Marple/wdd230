@@ -1,0 +1,50 @@
+{
+    "new-members": {
+        "family-name": "McCarthy",
+        "move-in-date": "2010",
+        "num-of-records": "8",
+        "bishopric-visit": "Yes",
+        "family-members": [
+            {
+                "name": "Daniel Matthew McCarthy",
+                "gender": "Male",
+                "birthdate": "1974-04-28"
+            },
+            {
+                "name": "Sharon Deborah McCarthy",
+                "gender": "Female",
+                "birthdate": "1971-10-10"
+            },
+            {
+                "name": "Joshua Daniel McCarthy",
+                "gender": "Male",
+                "birthdate": "1994-08-17"
+            },
+            {
+                "name": "Jackson Luke McCarthy",
+                "gender": "Male",
+                "birthdate": "1998-11-07"
+            },
+            {
+                "name": "Megan Charlotte McCarthy",
+                "gender": "Female",
+                "birthdate": "1999-06-02"
+            },
+            {
+                "name": "Joseph Thomas McCarthy",
+                "gender": "Male",
+                "birthdate": "2002-02-23"
+            },
+            {
+                "name": "Emily Sophia McCarthy",
+                "gender": "Female",
+                "birthdate": "2004-10-20"
+            },
+            {
+                "name": "Chloe Amelia McCarthy",
+                "gender": "Female",
+                "birthdate": "2006-12-15"
+            }
+        ]
+    }
+}
