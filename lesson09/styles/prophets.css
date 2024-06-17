@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --font: "Roboto Mono", monospace;
+    --primary-color: #A2A79E;
+    --text-color: #020122;
+    --color1: #29524A;
+    --color2: #8E4A49;
+    --color3: #B36C6B;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text-color);
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+    position: relative;
+}
+
+header,
+footer {
+    background: var(--color3);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    background: var(--color2);
+    box-shadow: 0 0 30px #000;
+    margin-top: -2rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.5rem;
+    padding: 0.35rem;
+    background: var(--primary-color);
+    border: 5px ridge var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #000;
+    height: 300px;
+    margin: 0.75rem;
+}
+
+p {
+    margin: 0.25rem;
+}
