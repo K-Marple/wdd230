@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Scoops and Soups",
+            "address": "513 Pollasky Ave Clovis, CA 93612",
+            "phone-number": "559-168-2517",
+            "website": "https://scoopsandsoups.com",
+            "image": "images/scoop-soup.png",
+            "member-level": "Bronze"
+        },
+        {
+            "name": "Pollasky Antiques",
+            "address": "587 Pollasky Ave Clovis, CA 93612",
+            "phone-number": "559-654-1869",
+            "website": "https://pollaskyantiques.com",
+            "image": "images/pollasky-antiques.png",
+            "member-level": "Silver"
+        },
+        {
+            "name": "5th Street Coffee",
+            "address": "278 5th St Clovis, CA 93612",
+            "phone-number": "559-267-4598",
+            "website": "https://fifthcoffee.com",
+            "image": "images/fifth-coffee.png",
+            "member-level": "Silver"
+        },
+        {
+            "name": "500 Club",
+            "address": "602 Clovis Ave Clovis, CA 93612",
+            "phone-number": "559-468-4952",
+            "website": "https://fivehundredclub.com",
+            "image": "images/five-club.png",
+            "member-level": "Gold"
+        },
+        {
+            "name": "Clovis Charities",
+            "address": "521 Clovis Ave Clovis, CA 93612",
+            "phone-number": "559-248-5892",
+            "website": "https://clovischarities.com",
+            "image": "images/charities.png",
+            "member-level": "NP"
+        },
+        {
+            "name": "Clovis Cole Museum",
+            "address": "491 Pollasky Ave Clovis, CA 93612",
+            "phone-number": "559-768-5971",
+            "website": "https://cloviscole.com",
+            "image": "images/clovis-cole.png",
+            "member-level": "NP"
+        },
+        {
+            "name": "Old Sierra Antiques",
+            "address": "548 Clovis Ave Clovis, CA 93612",
+            "phone-number": "559-495-1594",
+            "website": "https://oldsierra.com",
+            "image": "images/old-sierra.png",
+            "member-level": "Gold"
+        }
+    ]
+}

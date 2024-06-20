@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Town Clovis Chamber of Commerce</title>
+    <meta name="description" content="Old Town Clovis Chamber of Commerce site project by Kayli Marple.">
+    <meta name="author" content="Kayli Marple">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Old Town Clovis Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://k-marple.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://live.staticflickr.com/65535/51253550326_fca881b4b5_b.jpg">
+</head>
+
+<body>
+    <label id="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <header>
+        <div id="logo">
+            <img src="images/old-town-logo.webp" alt="Old Town Clovis">
+            <div id="name">
+                <h1>Old Town Clovis</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        </div>
+        <div id="buttons">
+            <a class="button" href="#">Login</a>
+            <a class="button" href="join.html">Become a Member!</a>
+        </div>
+    </header>
+    <div id="hero">
+        <div id="hero-box">
+            <img id=hero-img src="images/fire-station-medium.webp" alt="Old Town Clovis Fire Station">
+        </div>
+    </div>
+    <div id="menu-container">
+        <button id="menu" class="closed"><span id="btn-content"></span></button>
+    </div>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join Us</a>
+    </nav>
+    <main id="directory-main">
+
+    </main>
+    <footer>
+        <div id="contact">
+            <p>Phone:<br>559-796-3185 <br> otc@cofc.com</p>
+        </div>
+        <div id="footer-logo">
+            <img src="images/old-town-logo.webp" alt="Old Town Clovis">
+            <div id="footer-name">
+                <h2>Old Town Clovis <br> Chamber of Commerce</h2>
+            </div>
+        </div>
+        <div id="address">
+            <p>559 Pollasky Ave<br>Clovis, CA 93612</p>
+        </div>
+        <div id="project-info">
+            <p class="copyright">&copy;<span id="copyrightYear"></span> Old Town Clovis Chamber</p>
+            <p class="author">Kayli Marple</p>
+            <p class="project">WDD 230 Project</p>
+            <p class="lastModified">Last Modified Date: <span id="lastModified"></span></p>
+        </div>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/dark-mode.js"></script>
+    </footer>
+</body>
+
+</html>
