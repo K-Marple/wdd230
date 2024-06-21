@@ -6,7 +6,6 @@ async function getMemberData(directoryURL) {
     const response = await fetch(directoryURL);
     const data = await response.json();
 
-    console.log(data.members);
     displayMembers(data.members);
 }
 
@@ -30,12 +29,13 @@ const displayMembers = (members) => {
         logo.setAttribute("height", "500");
 
         website.setAttribute("href", member.website);
+        website.textContent = member.website;
 
+        card.appendChild(logo);
         card.appendChild(company);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
-        card.appendChild(logo);
 
         directory.appendChild(card);
     });

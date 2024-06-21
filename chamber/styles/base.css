@@ -566,3 +566,97 @@ h4 {
     background: var(--accent1-color);
     box-shadow: 0 10px 20px #000;
 }
+
+
+/* Directory Page */
+#directory-main {
+    display: unset;
+    margin: 5rem;
+    position: relative;
+    text-align: center;
+}
+
+#grid,
+#list {
+    background: var(--accent1-color);
+    color: var(--accent3-color);
+    border: none;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 0.5rem 1rem;
+    margin: 0 0.75rem;
+}
+
+#grid:hover,
+#list:hover {
+    background: var(--accent2-color);
+}
+
+#grid:focus,
+#list:focus {
+    background: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.75rem;
+    padding: 0.5rem;
+    border: 5px groove var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--accent3-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+section img {
+    width: auto;
+    max-width: 250px;
+    height: 250px;
+    margin: 0.75rem;
+}
+
+section p {
+    margin: 0.25rem;
+}
+
+section a {
+    color: var(--accent3-color);
+    margin: 0.25rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    text-align: left;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.list section:nth-child(even) {
+    background: var(--accent2-color);
+    color: #000;
+}
+
+.list section:nth-child(even) a {
+    color: #000;
+}
+
+.list section img {
+    display: none;
+}
+
+#directory.list {
+    margin: 1rem 2rem;
+    border: 5px groove var(--secondary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
