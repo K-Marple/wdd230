@@ -20,7 +20,7 @@ async function weatherAPI() {
 
 function displayWeather(data) {
     temperature.innerHTML = `${Math.round(data.main.temp)} &deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}@2x.png`;
     let descript = data.weather[0].description;
     icon.setAttribute("src", iconsrc);
     icon.setAttribute("alt", descript);
