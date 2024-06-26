@@ -197,3 +197,30 @@ footer {
     text-align: right;
     padding-right: 5%;
 }
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.weather p {
+    grid-column: 1/3;
+}
+
+#temp {
+    grid-column: 2/3;
+    text-align: left;
+}
+
+#temp-icon {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+figcaption {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    text-align: left;
+}
