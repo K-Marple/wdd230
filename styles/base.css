@@ -219,7 +219,7 @@ footer {
     grid-row: 2/4;
 }
 
-figcaption {
+#caption {
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: left;

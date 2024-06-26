@@ -1,6 +1,6 @@
 const temperature = document.querySelector("#temp");
 const icon = document.querySelector("#temp-icon");
-const description = document.querySelector("figcaption");
+const description = document.querySelector("#caption");
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=35.36&lon=-119.06&units=imperial&appid=c8cf089950baf27bae6d0edf10e833ff";
 
 async function weatherAPI() {
