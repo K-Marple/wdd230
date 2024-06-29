@@ -73,19 +73,19 @@
         </div>
         <div class="business-card">
             <div class="business1">
-                <h2>Clovis Museum</h2>
+                <h2>Clovis Cole Museum</h2>
                 <p>placeholder for information</p>
             </div>
             <div class="business2">
-                <h2>Scoops Soups</h2>
+                <h2>500 Club</h2>
                 <p>placeholder for information</p>
             </div>
             <div class="business3">
-                <h2>Antique Mall</h2>
+                <h2>Old Sierra Antiques</h2>
                 <p>placeholder for information</p>
             </div>
             <div class="business4">
-                <h2>Coffee Shop</h2>
+                <h2>5th Street Coffee Shop</h2>
                 <p>placeholder for information</p>
             </div>
         </div>
@@ -102,15 +102,32 @@
             </div>
             <div id="weather">
                 <h3>Weather Forecast</h3>
-                <img src="images/noaa.png" alt="National Oceanic and Atmospheric Administration">
-                <!-- <img id="weather-icon" src="" alt="Weather Icon"> -->
-                <p>Temperature in Fahrenheit:</p>
-                <p id="temperature">90</p>
-                <p>Wind Speed:</p>
-                <p id="wind-speed">3.0</p>
-                <p>Windchill:</p>
-                <p id="windchill"></p>
-
+                <div id="current">
+                    <h4>Current Weather</h4>
+                    <img id="weather-icon" src="" alt="">
+                    <p id="caption"></p>
+                    <p>Temperature:<br><span id="temperature"></span></p>
+                    <p>Wind Speed:<br><span id="wind-speed"></span></p>
+                    <p>Windchill:<br><span id="windchill"></span></p>
+                </div>
+                <div id="forecast">
+                    <h4>3-Day Forecast</h4>
+                    <div id="day1">
+                        <img id="day1-icon" src="" alt="">
+                        <p>High:<br><span id="day1-high"></span></p>
+                        <p>Low:<br><span id="day1-low"></span></p>
+                    </div>
+                    <div id="day2">
+                        <img id="day2-icon" src="" alt="">
+                        <p>High:<br><span id="day2-high"></span></p>
+                        <p>Low:<br><span id="day2-low"></span></p>
+                    </div>
+                    <div id="day3">
+                        <img id="day3-icon" src="" alt="">
+                        <p>High:<br><span id="day3-high"></span></p>
+                        <p>Low:<br><span id="day3-low"></span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -136,7 +153,9 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/menu.js"></script>
         <script src="scripts/dark-mode.js"></script>
+        <script src="scripts/weather.js"></script>
         <script src="scripts/windchill.js"></script>
+        <script src="scripts/forecast.js"></script>
     </footer>
 </body>
 
