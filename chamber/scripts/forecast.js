@@ -1,9 +1,4 @@
-const high1 = document.querySelector("#day1-high");
-const low1 = document.querySelector("#day1-low");
-const high2 = document.querySelector("#day2-high");
-const low2 = document.querySelector("#day2-low");
-const high3 = document.querySelector("#day3-high");
-const low3 = document.querySelector("#day3-low");
+const card = document.querySelector("#forecast-card");
 
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=36.82&lon=-119.70&units=imperial&appid=c8cf089950baf27bae6d0edf10e833ff";
 
@@ -22,72 +17,96 @@ async function forecastAPI() {
     }
 }
 
-function displayForecast(data) {
-    const dailyHigh = [];
-    let highTemps = [];
-    let lowTemps = [];
+function getDailyForecast(data) {
+    let dailyTemps = [];
+    const date = new Date();
+    const findDay = (1000 * 60 * 60 * 24);
 
-    data.list.forEach((temp) => {
-        let highs = temp.main.temp_max;
-        let lows = temp.main.temp_min;
-        let dates = temp.dt_txt;
-        days = dates.substr(8, 2);
+    data.list.forEach((temp, index) => {
+        const tempDay = new Date(temp.dt_txt)
+        const dayChange = tempDay - date;
+        const days = dayChange / findDay;
 
-        dailyHigh[0] = highs;
-        dailyHigh[1] = lows;
-        dailyHigh[2] = dates;
-        dailyHigh[3] = days;
-
-        days = dailyHigh[3];
-        let highTemp = dailyHigh[0];
-        let lowTemp = dailyHigh[1];
-
-        if (days == "29") {
-            highTemps.push(highTemp);
-            lowTemps.push(lowTemp);
-
-            let htotal = 0
-            for (t in highTemps) {
-                htotal += highTemps[t];
-            }
-            const highAvg = htotal / highTemps.length;
-            high1.innerHTML = `${Math.round(highAvg)} &deg;F`;
-
-            let ltotal = 0
-            for (t in lowTemps) {
-                ltotal += lowTemps[t];
-            }
-            const lowAvg = ltotal / lowTemps.length;
-            low1.innerHTML = `${Math.round(lowAvg)} &deg;F`;
+        if (dailyTemps[days] == null) {
+            dailyTemps[days] = {};
         }
 
+        if (dailyTemps[days].date == null) {
+            dailyTemps[days].date = tempDay;
+        }
 
+        if (dailyTemps[days].icon == null) {
+            dailyTemps[days].icon = `https://openweathermap.org/ing/wn/${temp.weather[0].icon}.png`;
+        }
+
+        if (dailyTemps[days].high == null) {
+            dailyTemps[days].high = 0;
+        }
+
+        if (dailyTemps[days].low == null) {
+            dailyTemps[days].low = 1000;
+        }
+
+        dailyTemps.high = Math.max(temp.main.temp, dailyTemps[days].high);
+        dailyTemps.low = Math.min(temp.main.temp, dailyTemps[days].low);
     })
 
-    // highTemps.forEach((hvalue) => {
-    //     let h = hvalue;
-    //     console.log(h);
-
-    //     for (let v in h) {
-    //         highVal = h[v];
-    //     }
-    //     console.log(highVal);
-    // });
-
-    // let highVal = 0;
-    // for (let v in hvalue) {
-    //     highVal += hvalue[v];
-    // }
-    // console.log(highVal);
-
-    // lowTemps.forEach((lvalues) => {
-    //     let l = lvalues;
-    //     console.log(l);
-    // });
-
-
-
-    low1.innerHTML = `${Math.round()} &deg;F`;
+    return dailyTemps;
 }
+
+function displayForecast(data) {
+    let forecast = getDailyForecast(data);
+
+    for (let x = 1; x < 4; x++) {
+        let info = forecast[x];
+        console.log(info);
+
+        const day = document.createElement("div");
+        let date = document.createElement("div")
+        const high = document.createElement("p");
+        const low = document.createElement("p");
+        const icon = document.createElement("img");
+
+        let forecastDay = info.date.toLocalDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+
+        date.textContent = forecastDay;
+        high.innerHTML = `High: ${info.high} &deg;F`;
+        low.innerHTML = `Low: ${info.low} &deg;F`;
+
+        icon.setAttribute("src", info.icon);
+        icon.setAttribute("alt", "Weather Icon");
+
+        day.appendChild(date);
+        day.appendChild(icon);
+        day.appendChild(high);
+        day.appendChild(low);
+
+        card.appendChild(day);
+        console.log(card);
+    }
+}
+
+// highTemps.forEach((hvalue) => {
+//     let h = hvalue;
+//     console.log(h);
+
+//     for (let v in h) {
+//         highVal = h[v];
+//     }
+//     console.log(highVal);
+// });
+
+// let highVal = 0;
+// for (let v in hvalue) {
+//     highVal += hvalue[v];
+// }
+// console.log(highVal);
+
+// lowTemps.forEach((lvalues) => {
+//     let l = lvalues;
+//     console.log(l);
+// });
+
+// low1.innerHTML = `${Math.round()} &deg;F`;
 
 forecastAPI();
