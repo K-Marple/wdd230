@@ -32,8 +32,18 @@
             </div>
         </div>
         <div id="buttons">
-            <a class="button" href="join.html">Login</a>
+            <a id="login" class="button">Login</a>
             <a class="button" href="join.html">Become a Member!</a>
+        </div>
+        <div id="login-modal">
+            <span class="close" title="Close Login">⨱</span>
+            <form class="login-content" action="">
+                <div class="login-container">
+                    <label>Username<input type="text" id="uname" name="uname" required></label>
+                    <label>Password<input type="password" id="pswd" name="pswd" required></label>
+                    <button type="submit" id="login-btn">Login</button>
+                </div>
+            </form>
         </div>
     </header>
     <div id="menu-container">
@@ -133,11 +143,12 @@
             <p class="project">WDD 230 Project</p>
             <p class="lastModified">Last Modified Date: <span id="lastModified"></span></p>
         </div>
-        <script src="scripts/getdates.js"></script>
-        <script src="scripts/menu.js"></script>
-        <script src="scripts/dark-mode.js"></script>
-        <script src="scripts/join-form.js"></script>
     </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/join-form.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 
 </html>

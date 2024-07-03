@@ -150,6 +150,66 @@ header {
     color: #000;
 }
 
+#login-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 5rem;
+    top: 5rem;
+    width: 60%;
+    background-color: var(--accent3-color);
+    border: 5px solid var(--accent2-color);
+}
+
+.login-content {
+    background: var(--accent3-color);
+    margin: 1rem;
+    width: 80%;
+}
+
+.login-content label {
+    display: block;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-family: var(--primary-font);
+}
+
+.login-content input[type=text],
+.login-content input[type=password] {
+    display: block;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.8rem;
+    color: var(--primary-color);
+    width: 90%;
+    max-width: 500px;
+    font-family: var(--secondary-font);
+}
+
+#login-btn {
+    font-family: var(--teriary-font);
+    font-size: 1.25rem;
+    margin: 20px 20%;
+    padding: 20px;
+    width: 60%;
+    border-radius: 5px;
+    background: var(--accent1-color);
+    color: var(--accent3-color);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    color: var(--accent1-color);
+    font-size: 2rem;
+}
+
+.close:hover {
+    color: var(--primary-color);
+}
+
 #menu-container {
     display: flex;
     justify-content: center;
