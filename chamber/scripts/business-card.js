@@ -23,6 +23,7 @@ function displayBusiness(business) {
 
         if (!cards.includes(randomCard)) {
             cards.push(randomCard);
+            createCard(randomCard);
 
             cardNum++;
         }
