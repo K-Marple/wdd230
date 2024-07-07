@@ -3,7 +3,7 @@ const displayVisits = document.querySelector(".visits");
 
 // get stored value
 let visitKey = "dateLastVisit-ls";
-let lastVisit = Number(window.localStorage.getItem(visitKey)) || 0;
+let lastVisit = Date(window.localStorage.getItem(visitKey)) || 0;
 
 // if statement
 if (lastVisit !== 0) {
