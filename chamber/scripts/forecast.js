@@ -7,7 +7,6 @@ async function forecastAPI() {
         const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayForecast(data);
         } else {
             throw Error(await response.text());
@@ -56,13 +55,14 @@ function getDailyForecast(data) {
 
 function displayForecast(data) {
     let forecast = getDailyForecast(data);
+    console.log(forecast);
 
     for (let x = 1; x < 4; x++) {
         let info = forecast[x];
         console.log(info);
 
         const day = document.createElement("div");
-        let date = document.createElement("div")
+        const date = document.createElement("p")
         const high = document.createElement("p");
         const low = document.createElement("p");
         const icon = document.createElement("img");
