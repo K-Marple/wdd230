@@ -1,9 +1,7 @@
 // dark mode
-const root = document.querySelector(":root");
 const modeBtn = document.querySelector("#switch");
-const body = document.querySelector("body");
+const main = document.querySelector("main");
 
-modeBtn.addEventListener("click", function () {
-    root.classList.toggle("dark");
-    body.classList.toggle("dark");
+modeBtn.addEventListener("click", () => {
+    main.classList.toggle("dark");
 });

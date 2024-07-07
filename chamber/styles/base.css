@@ -784,3 +784,8 @@ section a {
     border: 5px groove var(--secondary-color);
     box-shadow: 0 0 20px var(--primary-color);
 }
+
+/* DARK MODE */
+.dark {
+    background: #000;
+}
