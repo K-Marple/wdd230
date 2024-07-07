@@ -302,13 +302,20 @@ main {
     flex-wrap: wrap;
 }
 
-.business1,
-.business2,
-.business3,
-.business4 {
+.business-card div {
     border: 10px solid var(--primary-color);
     margin: 2rem;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-card img {
+    width: auto;
+    max-width: 200px;
+    height: 200px;
 }
 
 h2,
