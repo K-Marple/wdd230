@@ -10,8 +10,8 @@ async function getBusiness(businessURL) {
 
 function displayBusiness(business) {
     let businesses = [
-        business.filter(level => business.memberLevel == "Silver"),
-        business.filter(level => business.memberLevel == "Gold")
+        business.filter(business.memberLevel == "Silver"),
+        business.filter(business.memberLevel == "Gold")
     ]
 
     let cards = [];
@@ -36,8 +36,8 @@ function createCard(business) {
     let busiLogo = document.createElement("img");
     let busiDesc = document.createElement("p");
 
-    busiName.textContent = business.name;
-    busiDesc.textContent = business.description;
+    busiName.innerHTML = business.name;
+    busiDesc.innerHTML = business.description;
 
     busiLogo.setAttribute("src", business.image);
     busiLogo.setAttribute("alt", `${business.name} logo`);
