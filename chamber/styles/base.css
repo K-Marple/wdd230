@@ -341,8 +341,44 @@ iframe {
 
 #social {
     grid-column: 1/2;
-    width: 60%;
+    width: 50%;
     background: var(--secondary-color);
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 40px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 1rem;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    background: #3B7ECD;
+    color: #fff;
+}
+
+.fa-twitter {
+    background: #179CF0;
+    color: #fff;
+}
+
+.fa-instagram {
+    background: linear-gradient(to top right, #FCD058, #A331C1);
+    color: white;
 }
 
 #weather {
