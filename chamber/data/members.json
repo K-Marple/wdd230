@@ -6,7 +6,7 @@
             "phone": "559-168-2517",
             "website": "https://scoopsandsoups.com",
             "image": "images/scoop-soup.png",
-            "member-level": "Bronze",
+            "memberLevel": "Bronze",
             "description": ""
         },
         {
@@ -15,7 +15,7 @@
             "phone": "559-654-1869",
             "website": "https://pollaskyantiques.com",
             "image": "images/pollasky-antiques.png",
-            "member-level": "Silver",
+            "memberLevel": "Silver",
             "description": "Pollasky Antiques is a unique antique shop specializing in a wide range of historical items. From furniture and artwork to jewelry and books, we curate a diverse collection. Our knowledgeable staff can help you explore authentic pieces and appreciate their value."
         },
         {
@@ -24,7 +24,7 @@
             "phone": "559-267-4598",
             "website": "https://fifthcoffee.com",
             "image": "images/fifth-coffee.png",
-            "member-level": "Silver",
+            "memberLevel": "Silver",
             "description": "5th Street Coffee is a charming spot in downtown Clovis. Known for its friendly service and delicious coffee, it is a favorite among locals and visitors alike. Whether you prefer hot or iced coffee, this cozy coffee shop has something for everyone. Don't forget to grab a locally made pastry!"
         },
         {
@@ -33,7 +33,7 @@
             "phone": "559-468-4952",
             "website": "https://fivehundredclub.com",
             "image": "images/five-club.png",
-            "member-level": "Gold",
+            "memberLevel": "Gold",
             "description": "The historic 500 Club, located in Old Town Clovis, has been owned and operated since 1954. What started as a small bar with a poker table has grown into a beloved establishment. It now offers great food, a comfortable atmosphere, and a variety of games."
         },
         {
@@ -42,7 +42,7 @@
             "phone": "559-248-5892",
             "website": "https://clovischarities.com",
             "image": "images/charities.png",
-            "member-level": "NP",
+            "memberLevel": "NP",
             "description": ""
         },
         {
@@ -51,7 +51,7 @@
             "phone": "559-768-5971",
             "website": "https://cloviscole.com",
             "image": "images/clovis-cole.png",
-            "member-level": "NP",
+            "memberLevel": "NP",
             "description": "The Clovis Cole Museum is a gem in our small town. Located in the heart of Clovis, it houses historical artifacts, exhibits, and stories that celebrate our community's heritage. From pioneer days to modern times, the museum offers a glimpse into Clovis's past, preserving its rich history for generations to come."
         },
         {
@@ -60,7 +60,7 @@
             "phone": "559-495-1594",
             "website": "https://oldsierra.com",
             "image": "images/old-sierra.png",
-            "member-level": "Gold",
+            "memberLevel": "Gold",
             "description": "Old Sierra Antiques is a treasure trove for antique enthusiasts. Located in the Clovis, the Gateway to the Sierras, this shop specializes in unique and timeless pieces. From vintage furniture to collectibles, you'll find a selection that reflects the area's history and charm."
         }
     ]
