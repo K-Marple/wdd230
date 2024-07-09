@@ -46,11 +46,75 @@ nav a {
     font-size: 25px;
 }
 
+main {
+    display: grid;
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+p {
+    width: 70%;
+    max-width: 60vw;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: 0 5rem;
+    width: 70%;
+    justify-self: center;
+}
+
+.slideshow-container img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slides {
+    display: none;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 15px;
+    margin-top: -50px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 15px;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background: var(--black, 0.7);
+}
+
+.caption-container {
+    text-align: center;
+    background: var(--primary-color);
+    padding: 3px;
+    color: var(--secondary-color);
+}
+
+#caption {
+    max-width: unset;
+    width: unset;
+}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
+    margin-top: 1rem;
     background: var(--accent-color2);
 
 }
