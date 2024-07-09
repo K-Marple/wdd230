@@ -50,6 +50,10 @@ main {
     display: grid;
 }
 
+.todays-high {
+    display: none;
+}
+
 h1 {
     font-family: var(--heading-font);
 }
