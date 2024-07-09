@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poetsen+One&display=swap');
+
+:root {
+    /* Colors */
+    --primary-color: #FF914D;
+    --secondary-color: #FFF0D9;
+    --accent-color1: #FEB37F;
+    --accent-color2: #C6723D;
+    --black: #000;
+
+    /* Fonts */
+    --primary-font: "Livvic", sans-serif;
+    --heading-font: "Poetsen One", sans-serif;
+}
+
+body {
+    margin: 1rem;
+    background: var(--secondary-color);
+    font-family: var(--primary-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: var(--accent-color2);
+    padding: 1rem;
+}
+
+header img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    font-family: var(--heading-font);
+    color: var(--black);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background: var(--accent-color2);
+
+}
+
+footer h4 {
+    font-family: var(--heading-font);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 15px;
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B7ECD;
+    color: #fff;
+}
+
+.fa-instagram {
+    background: linear-gradient(to top right, #FCD058, #A331C1);
+    color: white;
+}
