@@ -30,16 +30,59 @@
         </nav>
     </header>
     <main>
-        <h4>Making a reservation is easy! Just fill out the form below or give us a call. We just ask that you follow a
-            few rules.</h4>
-        <p>For all reservations a $50 security deposit is required at time of reservation. We accept Google Pay, Apple
-            Pay, cash, credit and debit cards, and Venmo. A valid drivers license is required when you check in and
-            receive your rental. Fuel charge is not included in our services. Liability insurance is included, and
-            damage insurance is available for purchase at pick-up. Our vehicle rentals come with unlimited mileage, and
-            for rentals 2 days or longer, we can deliver your vehicle to your hotel or Airbnb on Cozumel Island. Rentals
-            may be returned to either of our physical locations on the island. For scooter rentals, no one under the age
-            of 12 are allow to ride.</p>
-        <form></form>
+        <div id="contract">
+
+            <h4>Making a reservation is easy! Just fill out the form below or give us a call. We just ask that you
+                follow a few rules.</h4>
+            <img src="images/east-coast.webp" alt="Eastern Shores">
+            <div class="contract-info">
+                <p>By submitting the form below you agree to follow the following rules:
+                <ul>
+                    <li>$50 deposit at time of reservation</li>
+                    <p>We accept Google Pay, Apple Pay, cash, credit and debit cards, and Venmo.</p>
+                    <li>Provide a valid drivers license is required at check in and receival of your rental</li>
+                    <li>Fuel charge is not included in our services</li>
+                    <li>Liability insurance is included, and damage insurance is available for purchase at pick-up</li>
+                    <li>Unlimited mileage for all rentals</li>
+                    <li>Scooter rentals: no one under the age of 12 are allow to ride</li>
+                </ul>
+                <p>For rentals 2 days or longer, we can deliver your vehicle to your hotel or Airbnb on Cozumel Island.
+                    Rentals may be returned to either of our physical locations on the island.</p>
+            </div>
+        </div>
+        <div id="reserve_form">
+            <form method="get" action="thankyou.html">
+                <h6>* indicates a required field</h6>
+                <fieldset>
+                    <legend>Reservation Information</legend>
+                    <label>Period of Rental</label>
+                    <label>Start Date* <input type="date" id="start_date" name="start_date" required></label>
+                    <label>End Date* <input type="date" id="end_date" name="end_date" required></label>
+                    <label>Rental Type*
+                        <select id="rental" name="rental" required>
+                            <option value="metropolitan">Honda Metropolitan</option>
+                            <option value="dio">Honda Dio</option>
+                            <option value="pcx">Honda PCX150</option>
+                            <option value="pioneer">Honda Pioneer 1000</option>
+                            <option value="2-door">Jeep Wrangler - 2 door</option>
+                            <option value="4-door">Jeep Wrangler - 4 door</option>
+                    </label>
+                    <label>Number of Rentals* <input type="number" id="number" name="number" required></label>
+                    <label>Special Accommodations/Comments<textarea id="notes" name="notes"
+                            placeholder="Any requests or comments, such as need for rental or location for delivery."></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label>Phone Number* <input type="tel" id="phone" name="phone" required></label>
+                    <label>Email* <input type="email" id="email" name="email" required></label>
+                    <label>Home State/Country* <input type="text" id="home" name="home" required></label>
+                    <label>Cruise Line <input type="text" id="cruise" name="cruise"
+                            placeholder="Enter your cruise line, if applicable"></label>
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <div id="contact">
