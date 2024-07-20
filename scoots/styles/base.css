@@ -148,7 +148,7 @@ main img {
 }
 
 .reserve h6 {
-    margin: 0 60% 1rem 5%;
+    margin: 0 50% 1rem 5%;
     padding: 1rem;
     background: var(--black);
     color: var(--primary-color);
@@ -181,7 +181,7 @@ main img {
     border: 1px solid;
     border-radius: 10px;
     padding: 1rem;
-    width: 90%;
+    width: 80%;
     max-width: 500px;
 }
 
