@@ -29,6 +29,11 @@
         display: block;
     }
 
+    #contract img {
+        width: 30%;
+        padding: 1rem;
+    }
+
     .form h6 {
         margin: 0 60% 1rem 5%;
     }

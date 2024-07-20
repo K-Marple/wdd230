@@ -124,8 +124,9 @@ main img {
 }
 
 #contract img {
-    width: 30%;
-    padding: 1rem;
+    width: 60%;
+    padding: 1rem 20%;
+    border-radius: 28%;
 }
 
 #contract h4 {
