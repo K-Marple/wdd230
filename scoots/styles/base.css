@@ -212,14 +212,12 @@ main img {
 }
 
 #contact-info {
-    display: grid;
-    grid-template-columns: 8fr 7fr;
-    grid-template-rows: 0.25fr 2fr 3fr;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
 }
 
 #contact-info h4 {
-    grid-column: 1/3;
     text-align: center;
 }
 
@@ -229,15 +227,14 @@ main img {
 }
 
 #contact-info img {
-    width: 80%;
-    padding: 2rem;
-    border-radius: 20%;
+    width: 60%;
+    padding: 2rem 20%;
+    border-radius: 28%;
 }
 
 iframe {
-    grid-column: 1/3;
     justify-self: center;
-    margin: 1rem;
+    margin: 1rem 10%;
     border: 1px solid;
     border-radius: 10px;
     width: 80%;
