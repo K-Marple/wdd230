@@ -33,7 +33,33 @@
         </nav>
     </header>
     <main>
-
+        <div id="contact-info">
+            <h4>Reach out with any questions or concerns you have!</h4>
+            <p>Please fill out the form below with any comments you have for us. We do our best to respond to all of
+                your comments or concerns submitted with the form below within 24 hours.<br><br>
+                For more pressing issues, please call us at +52 987 1234 5678 during the hours between 7 AM and 7 PM,
+                Eastern Standard Time. For issues outside of those times, please email us at
+                scoots_rentals@gmail.com. We will respond by 8 AM EST the next day.<br><br>
+                You can also vist us in person at one of our physical locations in El Centro and by the Puerta Maya
+                Cruise Terminal. See map below for exact locations.</p>
+            <img src="images/cozumel-lighthouse.jpg" alt="Lighthouse" loading="lazy">
+            <iframe
+                src="https://www.google.com/maps/d/u/0/embed?mid=16ggJFPID99BaqAr2Oz8dfDv-MAocAw8&ehbc=2E312F&noprof=1"
+                width="640" height="480" loading="lazy"></iframe>
+        </div>
+        <div id="contact-form">
+            <form method="get" action="sent.html" class="form">
+                <h6>* indicates a required field</h6>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label>Name* <input type="text" id="flname" name="flname" required></label>
+                    <label>Email* <input type="email" id="email" name="email" required></label>
+                    <label>Comments<textarea id="notes" name="notes"
+                            placeholder="Any comments or questions"></textarea></label>
+                </fieldset>
+                <button type="submit" id="submit" name="submit">Send Comment</button>
+            </form>
+        </div>
     </main>
     <footer>
         <div id="contact">
@@ -46,6 +72,7 @@
             <a href="https://instagram.com" class="fa fa-instagram"></a>
         </div>
     </footer>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

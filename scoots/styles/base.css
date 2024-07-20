@@ -147,7 +147,7 @@ main img {
     border-radius: 50px;
 }
 
-.reserve h6 {
+.form h6 {
     margin: 0 50% 1rem 5%;
     padding: 1rem;
     background: var(--black);
@@ -155,28 +155,28 @@ main img {
     border-radius: 50px;
 }
 
-.reserve fieldset {
+.form fieldset {
     border: 5px dotted var(--accent-color2);
     margin-bottom: 2rem;
 }
 
-.reserve legend {
+.form legend {
     padding: 0 1rem;
     font-family: var(--heading-font);
 }
 
-.reserve label {
+.form label {
     display: block;
     padding-top: 1rem;
 }
 
-.reserve input[type="date"],
-.reserve input[type="number"],
-.reserve select,
-.reserve textarea,
-.reserve input[type="text"],
-.reserve input[type="tel"],
-.reserve input[type="email"] {
+.form input[type="date"],
+.form input[type="number"],
+.form select,
+.form textarea,
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"] {
     display: block;
     border: 1px solid;
     border-radius: 10px;
@@ -185,15 +185,15 @@ main img {
     max-width: 500px;
 }
 
-.reserve input:required {
+.form input:required {
     border-left: 10px solid var(--primary-color);
 }
 
-.reserve input:valid {
+.form input:valid {
     border-left: 1px solid;
 }
 
-.reserve button {
+.form button {
     padding: 1rem 3rem;
     width: 80%;
     max-width: 500px;
@@ -206,9 +206,48 @@ main img {
     border: none;
 }
 
-.reserve button:hover {
+.form button:hover {
     background: var(--accent-color2);
     box-shadow: 10px 10px 30px var(--black);
+}
+
+#contact-info {
+    display: grid;
+    grid-template-columns: 8fr 7fr;
+    grid-template-rows: 0.25fr 2fr 3fr;
+    padding: 2rem;
+}
+
+#contact-info h4 {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#contact-info p {
+    padding: 2rem;
+    width: unset;
+}
+
+#contact-info img {
+    width: 80%;
+    padding: 2rem;
+    border-radius: 20%;
+}
+
+iframe {
+    grid-column: 1/3;
+    justify-self: center;
+    margin: 1rem;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 80%;
+}
+
+#contact-form {
+    margin: 1rem 5rem;
+    padding: 2rem;
+    border: 1rem solid var(--accent-color1);
+    border-radius: 50px;
 }
 
 footer {
