@@ -21,7 +21,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 3fr 3fr 1fr;
     background: var(--accent-color2);
     padding: 1rem;
 }
@@ -33,17 +33,51 @@ header img {
     justify-self: center;
 }
 
-nav {
+#menu-cont {
+    grid-column: 3/4;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-nav a {
+#menu {
+    font-size: 3rem;
+    border: none;
+    background: none;
+    color: var(--black);
+}
+
+#menu.closed::before {
+    content: "≡";
+}
+
+#menu::before {
+    content: "×";
+}
+
+.navigation {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    background: var(--accent-color2);
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    display: none;
+    text-align: center;
     font-family: var(--heading-font);
     color: var(--black);
     text-decoration: none;
     font-size: 25px;
+}
+
+.navigation a:hover {
+    background: var(--primary-color);
+}
+
+.closed a {
+    display: block;
 }
 
 main {
@@ -106,6 +140,77 @@ main img {
     width: 90%;
 }
 
+#reserve-form {
+    margin: 2rem 5rem;
+    padding: 2rem;
+    border: 1rem solid var(--accent-color1);
+    border-radius: 50px;
+}
+
+.reserve h6 {
+    margin: 0 60% 1rem 5%;
+    padding: 1rem;
+    background: var(--black);
+    color: var(--primary-color);
+    border-radius: 50px;
+}
+
+.reserve fieldset {
+    border: 5px dotted var(--accent-color2);
+    margin-bottom: 2rem;
+}
+
+.reserve legend {
+    padding: 0 1rem;
+    font-family: var(--heading-font);
+}
+
+.reserve label {
+    display: block;
+    padding-top: 1rem;
+}
+
+.reserve input[type="date"],
+.reserve input[type="number"],
+.reserve select,
+.reserve textarea,
+.reserve input[type="text"],
+.reserve input[type="tel"],
+.reserve input[type="email"] {
+    display: block;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+.reserve input:required {
+    border-left: 10px solid var(--primary-color);
+}
+
+.reserve input:valid {
+    border-left: 1px solid;
+}
+
+.reserve button {
+    padding: 1rem 3rem;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 10%;
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+    background: var(--black);
+    color: var(--secondary-color);
+    border-radius: 50px;
+    border: none;
+}
+
+.reserve button:hover {
+    background: var(--accent-color2);
+    box-shadow: 10px 10px 30px var(--black);
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -113,7 +218,6 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
     background: var(--accent-color2);
-
 }
 
 footer h4 {

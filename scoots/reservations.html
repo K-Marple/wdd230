@@ -22,7 +22,10 @@
 <body>
     <header>
         <img src="images/scoots-logo.png" alt="Scoots Logo">
-        <nav>
+        <div id="menu-cont">
+            <button id="menu" class="closed"><span id="btn-content"></span></button>
+        </div>
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="rentals.html">Rentals</a>
             <a href="reservations.html">Reservations</a>
@@ -50,14 +53,15 @@
                     Rentals may be returned to either of our physical locations on the island.</p>
             </div>
         </div>
-        <div id="reserve_form">
-            <form method="get" action="thankyou.html">
+        <div id="reserve-form">
+            <form method="get" action="thankyou.html" class="reserve">
                 <h6>* indicates a required field</h6>
                 <fieldset>
                     <legend>Reservation Information</legend>
-                    <label>Period of Rental</label>
+                    <label>Period of Rental:</label>
                     <label>Start Date* <input type="date" id="start_date" name="start_date" required></label>
                     <label>End Date* <input type="date" id="end_date" name="end_date" required></label>
+                    <label>Number of Rentals* <input type="number" id="number" name="number" required></label>
                     <label>Rental Type*
                         <select id="rental" name="rental" required>
                             <option value="metropolitan">Honda Metropolitan</option>
@@ -66,8 +70,8 @@
                             <option value="pioneer">Honda Pioneer 1000</option>
                             <option value="2-door">Jeep Wrangler - 2 door</option>
                             <option value="4-door">Jeep Wrangler - 4 door</option>
+                        </select>
                     </label>
-                    <label>Number of Rentals* <input type="number" id="number" name="number" required></label>
                     <label>Special Accommodations/Comments<textarea id="notes" name="notes"
                             placeholder="Any requests or comments, such as need for rental or location for delivery."></textarea></label>
                 </fieldset>
@@ -81,6 +85,8 @@
                     <label>Cruise Line <input type="text" id="cruise" name="cruise"
                             placeholder="Enter your cruise line, if applicable"></label>
                 </fieldset>
+                <input type="hidden" id="reserve-date" name="reserve-date">
+                <button type="submit" id="submit" name="submit">Reserve My Ride!</button>
             </form>
         </div>
     </main>
@@ -95,6 +101,7 @@
             <a href="https://instagram.com" class="fa fa-instagram"></a>
         </div>
     </footer>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

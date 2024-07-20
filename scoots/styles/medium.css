@@ -1,0 +1,30 @@
+@media screen and (min-width:900px) {
+    :root {
+        /* Colors */
+        --primary-color: #FF914D;
+        --secondary-color: #FFF0D9;
+        --accent-color1: #FEB37F;
+        --accent-color2: #C6723D;
+        --black: #000;
+
+        /* Fonts */
+        --primary-font: "Livvic", sans-serif;
+        --heading-font: "Poetsen One", sans-serif;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        grid-column: 2/4;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+    }
+}
