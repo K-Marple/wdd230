@@ -29,6 +29,26 @@
         display: block;
     }
 
+    .mobile {
+        display: grid;
+    }
+
+    #main {
+        grid-column: 1/2;
+        padding-left: 2rem;
+    }
+
+    #sidebar {
+        grid-column: 2/3;
+        padding-right: 1rem;
+    }
+
+    .current,
+    .forecast {
+        float: unset;
+        padding: 1rem;
+    }
+
     #contract img {
         width: 30%;
         padding: 1rem;

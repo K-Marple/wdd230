@@ -103,20 +103,29 @@ main h1 {
     text-align: center;
 }
 
+.mobile {
+    display: flex;
+    flex-direction: column;
+}
+
 main img {
     width: 80%;
     padding: 1rem 10%;
     border-radius: 15%;
 }
 
-#main {
-    float: left;
-    padding-left: 2rem;
+#main p {
+    padding-left: 15%;
 }
 
-#sidebar {
+.current {
+    float: left;
+    padding: 0 3rem;
+}
+
+.forecast {
     float: right;
-    padding-right: 1rem;
+    padding: 0 3rem;
 }
 
 #contract {
