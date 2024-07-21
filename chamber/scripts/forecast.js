@@ -35,7 +35,7 @@ function getDailyForecast(data) {
         }
 
         if (dailyTemps[days].icon == null) {
-            dailyTemps[days].icon = `https://openweathermap.org/ing/wn/${temp.weather[0].icon}.png`;
+            dailyTemps[days].icon = `https://openweathermap.org/img/wn/${temp.weather[0].icon}.png`;
         }
 
         if (dailyTemps[days].high == null) {

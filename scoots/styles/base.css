@@ -128,6 +128,12 @@ main img {
     padding: 0 3rem;
 }
 
+.current img,
+.forcast img {
+    width: 40%;
+    max-width: 200px;
+}
+
 #contract {
     padding: 2rem;
 }
@@ -155,6 +161,10 @@ main img {
     padding: 2rem;
     border: 1rem solid var(--accent-color1);
     border-radius: 50px;
+}
+
+#reserve-form h4 {
+    text-align: center;
 }
 
 .form h6 {
@@ -255,6 +265,10 @@ iframe {
     padding: 2rem;
     border: 1rem solid var(--accent-color1);
     border-radius: 50px;
+}
+
+#contact-form h4 {
+    text-align: center;
 }
 
 footer {
