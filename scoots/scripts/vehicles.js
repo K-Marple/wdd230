@@ -1,5 +1,5 @@
-const vehicleURL = "https://k-marple.github.io/scoots/data/rentals.json";
-const vehicleCard = document.querySelector(".vehicles");
+const vehicleURL = "https://k-marple.github.io/wdd230/scoots/data/rentals.json";
+const vehicleCard = document.querySelector("#vehicles");
 
 async function getVehicleInfo(vehicleURL) {
     const response = await fetch(vehicleURL);
@@ -22,3 +22,5 @@ const displayVehicles = (rentals) => {
 
     });
 }
+
+getVehicleInfo();
