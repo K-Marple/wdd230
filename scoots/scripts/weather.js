@@ -51,12 +51,15 @@ async function forecastAPI() {
 
 function getForecast(data) {
     let tmwData = [];
-    const date = new Date();
+    const day = new Date();
 
     data.list.forEach((temps) => {
         const tempDay = new Date(temps.dt_txt);
-        const dayChange = tempDay - date;
+        console.log(tempDay);
+        const dayChange = tempDay - day;
+        console.log(dayChange);
         const days = dayChange / (1000 * 60 * 60 * 24);
+        console.log(days);
 
         if (tmwData[days] == null) {
             tmwData[days] = {};
@@ -90,19 +93,25 @@ function displayForecast(data) {
     let forecast = getForecast(data);
     console.log(forecast);
 
-    for (let x = 1; x < 2; x++) {
-        console.log(x);
-        let info = forecast(x);
-        console.log(info);
+    for (x in forecast) {
+        let info = forecast[x];
+
+        const findDay = info.date;
+        console.log(findDay);
+
+
+        // if (info.date.includes("15:00:00")) {
+        // tmwTemp.innerHTML = `${Math.round(data.main.temp)} &deg;F`;
+        // tmwHumid.innerHTML = data.main.humidity;
+        // const tmwIconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+        // let desc = data.weather[0].description;
+        // tmwIcon.setAttribute("src", tmwIconsrc);
+        // tmwIcon.setAttribute("alt", desc);
+        // tmwDesc.textContent = `${capitalize(desc)}`;
+        // }
     }
-    // tmwTemp.innerHTML = `${Math.round(data.main.temp)} &deg;F`;
-    // tmwHumid.innerHTML = data.main.humidity;
-    // const tmwIconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    // let desc = data.weather[0].description;
-    // tmwIcon.setAttribute("src", tmwIconsrc);
-    // tmwIcon.setAttribute("alt", desc);
-    // tmwDesc.textContent = `${capitalize(desc)}`;
 }
+
 
 function capitalize(desc) {
     desc = desc.split(" ");
