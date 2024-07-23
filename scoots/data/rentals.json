@@ -7,6 +7,7 @@
                     "name": "Honda Metropolitan",
                     "occupancy": "1",
                     "other": "49cc",
+                    "image": "images/honda-metropolitan.jpg",
                     "price": [
                         {
                             "reservation": [
@@ -30,6 +31,7 @@
                     "name": "Honda Dio",
                     "occupancy": "2",
                     "other": "110cc",
+                    "image": "images/honda-dio.jpg",
                     "price": [
                         {
                             "reservation": [
@@ -53,6 +55,7 @@
                     "name": "Honda PCX150",
                     "occupancy": "2",
                     "other": "149cc",
+                    "image": "images/honda-pcx.jpg",
                     "price": [
                         {
                             "reservation": [
@@ -81,6 +84,7 @@
                     "name": "Honda Pioneer 1000",
                     "occupancy": "4",
                     "other": "Side-by-Side",
+                    "image": "images/honda-pioneer.jpg",
                     "price": [
                         {
                             "reservation": [
@@ -109,6 +113,7 @@
                     "name": "Wrangler - 2 Door",
                     "occupancy": "4",
                     "other": "manuel, open air",
+                    "image": "images/2door-wrangler.jpg",
                     "price": [
                         {
                             "reservation": [
@@ -132,6 +137,7 @@
                     "name": "Wrangler - 4 Door",
                     "occupancy": "5",
                     "other": "manuel, A/C",
+                    "image": "images/4door-wrangler.jpg",
                     "price": [
                         {
                             "reservation": [
