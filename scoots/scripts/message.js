@@ -9,7 +9,6 @@ async function highAPI() {
         const response = await fetch(todayURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displayTodayHigh(data);
         } else {
             throw Error(await response.text());

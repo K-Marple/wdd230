@@ -49,17 +49,14 @@ async function forecastAPI() {
     }
 }
 
-function getForecast(data) {
+function displayForecast(data) {
     let tmwData = [];
     const day = new Date();
 
     data.list.forEach((temps) => {
         const tempDay = new Date(temps.dt_txt);
-        console.log(tempDay);
         const dayChange = tempDay - day;
-        console.log(dayChange);
         const days = dayChange / (1000 * 60 * 60 * 24);
-        console.log(days);
 
         if (tmwData[days] == null) {
             tmwData[days] = {};
@@ -86,31 +83,35 @@ function getForecast(data) {
         }
     });
 
-    return tmwData;
+    console.log(tmwData);
+
+    const tomorrow = new Date(data.list[0].dt_txt);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+
+    const nextDay = tomorrow.toISOString().split('T')[0];
+    const time = "15:00:00";
+    console.log(nextDay);
+    console.log(time);
+
+    tmwData.forEach((times) => {
+        const checkDay = times.date.toISOString().split('T')[0];
+        if (checkDay == nextDay) {
+            tmwTemp.innerHTML = `${Math.round(data.main.temp)} &deg;F`;
+            tmwHumid.innerHTML = data.main.humidity;
+            const tmwIconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+            let desc = data.weather[0].description;
+            tmwIcon.setAttribute("src", tmwIconsrc);
+            tmwIcon.setAttribute("alt", desc);
+            tmwDesc.textContent = `${capitalize(desc)}`;
+        }
+    })
+
 }
 
-function displayForecast(data) {
-    let forecast = getForecast(data);
-    console.log(forecast);
 
-    for (x in forecast) {
-        let info = forecast[x];
-
-        const findDay = info.date;
-        console.log(findDay);
-
-
-        // if (info.date.includes("15:00:00")) {
-        // tmwTemp.innerHTML = `${Math.round(data.main.temp)} &deg;F`;
-        // tmwHumid.innerHTML = data.main.humidity;
-        // const tmwIconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-        // let desc = data.weather[0].description;
-        // tmwIcon.setAttribute("src", tmwIconsrc);
-        // tmwIcon.setAttribute("alt", desc);
-        // tmwDesc.textContent = `${capitalize(desc)}`;
-        // }
-    }
-}
+// if (info.date.includes("15:00:00")) {
+// 
+// }
 
 
 function capitalize(desc) {
