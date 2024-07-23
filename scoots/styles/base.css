@@ -112,10 +112,10 @@ h3 {
     font-family: var(--heading-font);
 }
 
-/* p {
+p {
     width: 70%;
     max-width: 60vw;
-} */
+}
 
 main h1 {
     grid-column: 1/3;
@@ -151,6 +151,27 @@ main img {
 .forcast img {
     width: 40%;
     max-width: 200px;
+}
+
+#vehicles {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.tablink {
+    background: var(--secondary-color);
+    border: none;
+    font-family: var(--heading-font);
+    padding: 1rem 5%;
+}
+
+.tablink:hover {
+    background: var(--accent-color1);
+}
+
+.tabcontent {
+    display: none;
 }
 
 #contract {

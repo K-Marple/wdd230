@@ -49,6 +49,11 @@
         padding: 1rem;
     }
 
+    .tablink {
+        font-size: 2rem;
+        padding: 1rem 10%;
+    }
+
     #contract img {
         width: 30%;
         padding: 1rem;
