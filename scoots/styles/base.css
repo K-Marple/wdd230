@@ -154,7 +154,8 @@ main img {
 }
 
 #vehicles {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
     margin-top: 1rem;
 }
@@ -170,8 +171,26 @@ main img {
     background: var(--accent-color1);
 }
 
+#scooter {
+    grid-column: 1/2;
+}
+
 .tabcontent {
     display: none;
+    grid-column: 1/4;
+    padding: 2rem;
+}
+
+table,
+th,
+td {
+    border: 3px solid;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+table th {
+    background: var(--primary-color);
 }
 
 #contract {
@@ -180,12 +199,14 @@ main img {
 
 #contract img {
     width: 60%;
-    padding: 1rem 20%;
+    padding: 1rem auto;
     border-radius: 28%;
 }
 
-#contract h4 {
+#head {
+    font-weight: bold;
     text-align: center;
+    margin: 1rem auto;
 }
 
 .contract-info {
@@ -195,6 +216,10 @@ main img {
 
 .contract-info p {
     width: 90%;
+}
+
+.contract-info ul {
+    padding-right: 1rem;
 }
 
 #reserve-form {
@@ -243,7 +268,7 @@ main img {
     border-radius: 10px;
     padding: 1rem;
     width: 80%;
-    max-width: 500px;
+    max-width: 300px;
 }
 
 .form input:required {
@@ -257,7 +282,7 @@ main img {
 .form button {
     padding: 1rem 3rem;
     width: 80%;
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 10%;
     font-size: 1.5rem;
     font-family: var(--heading-font);
@@ -278,8 +303,10 @@ main img {
     padding: 2rem;
 }
 
-#contact-info h4 {
+#contact-info p:nth-child(1) {
     text-align: center;
+    font-weight: bold;
+    max-width: unset;
 }
 
 #contact-info p {
@@ -288,8 +315,9 @@ main img {
 }
 
 #contact-info img {
-    width: 60%;
-    padding: 2rem 20%;
+    width: 80%;
+    max-width: 300px;
+    padding: 2rem 10%;
     border-radius: 28%;
 }
 
@@ -299,6 +327,7 @@ iframe {
     border: 1px solid;
     border-radius: 10px;
     width: 80%;
+    max-width: 300px;
 }
 
 #contact-form {
