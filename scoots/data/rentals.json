@@ -6,7 +6,7 @@
                 {
                     "name": "Honda Metropolitan",
                     "occupancy": "1",
-                    "other": "49cc",
+                    "other": "The Metropolitan has 49cc engine.",
                     "image": "images/honda-metropolitan.jpg",
                     "price": [
                         {
@@ -30,7 +30,7 @@
                 {
                     "name": "Honda Dio",
                     "occupancy": "2",
-                    "other": "110cc",
+                    "other": "The Dio has a 110cc engine.",
                     "image": "images/honda-dio.jpg",
                     "price": [
                         {
@@ -54,7 +54,7 @@
                 {
                     "name": "Honda PCX150",
                     "occupancy": "2",
-                    "other": "149cc",
+                    "other": "The PCX150 has a 149cc engine.",
                     "image": "images/honda-pcx.jpg",
                     "price": [
                         {
@@ -83,7 +83,7 @@
                 {
                     "name": "Honda Pioneer 1000",
                     "occupancy": "4",
-                    "other": "Side-by-Side",
+                    "other": "The Pioneer is a side-by-side, all open.",
                     "image": "images/honda-pioneer.jpg",
                     "price": [
                         {
@@ -112,7 +112,7 @@
                 {
                     "name": "Wrangler - 2 Door",
                     "occupancy": "4",
-                    "other": "manuel, open air",
+                    "other": "The 2 door Wrangler is manuel drive and open air.",
                     "image": "images/2door-wrangler.jpg",
                     "price": [
                         {
@@ -136,7 +136,7 @@
                 {
                     "name": "Wrangler - 4 Door",
                     "occupancy": "5",
-                    "other": "manuel, A/C",
+                    "other": "The 4 door Wrangler is manuel drive and is fully enclosed with A/C.",
                     "image": "images/4door-wrangler.jpg",
                     "price": [
                         {
