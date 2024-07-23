@@ -41,65 +41,65 @@ const displayVehicles = (rentals) => {
         let other = document.createElement("p");
         let price = document.createElement("table");
 
-        image.setAttribute("src", rental.vehicles.image);
-        image.setAttribute("alt", rentals.vehicles.name);
+        image.setAttribute("src", rental.image);
+        image.setAttribute("alt", rentals.name);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "259");
         image.setAttribute("height", "194");
 
-        vehicle.innerHTML = rental.vehicles.name;
-        size.innerHTML = `Occupancy: ${rental.vehicles.occupancy}`;
-        other.innerHTML = `Notes: ${rental.vehicles.other}`;
+        vehicle.innerHTML = rental.name;
+        size.innerHTML = `Occupancy: ${rental.occupancy}`;
+        other.innerHTML = `Notes: ${rental.other}`;
 
-        rental.vehicles.price.forEach((cost) => {
-            let headRow = document.createElement("tr");
-            let res = document.createElement("th");
-            let walk = document.createElement("th");
+        // rental.price.forEach((cost) => {
+        let headRow = document.createElement("tr");
+        let res = document.createElement("th");
+        let walk = document.createElement("th");
 
-            let dayRow = document.createAttribute("tr");
-            let halfR = document.createAttribute("td");
-            let fullR = document.createElement("td");
-            let halfW = document.createAttribute("td");
-            let fullW = document.createElement("td");
+        let dayRow = document.createAttribute("tr");
+        let halfR = document.createAttribute("td");
+        let fullR = document.createElement("td");
+        let halfW = document.createAttribute("td");
+        let fullW = document.createElement("td");
 
-            let costRow = document.createAttribute("tr");
-            let costHR = document.createElement("td");
-            let costFR = document.createElement("td");
-            let costHW = document.createElement("td");
-            let costFW = document.createElement("td");
+        let costRow = document.createAttribute("tr");
+        let costHR = document.createElement("td");
+        let costFR = document.createElement("td");
+        let costHW = document.createElement("td");
+        let costFW = document.createElement("td");
 
-            res.innerHTML = "Reservation";
-            res.setAttribute("colspan", "2");
-            walk.innerHTML = "Walk-In";
-            walk.setAttribute("colspan", "2");
+        res.innerHTML = "Reservation";
+        res.setAttribute("colspan", "2");
+        walk.innerHTML = "Walk-In";
+        walk.setAttribute("colspan", "2");
 
-            halfR.innerHTML = "Half Day (3hrs)";
-            fullR.innerHTML = "Full Day";
-            halfW.innerHTML = "Half Day (3hrs)";
-            fullW.innerHTML = "Full Day";
+        halfR.innerHTML = "Half Day (3hrs)";
+        fullR.innerHTML = "Full Day";
+        halfW.innerHTML = "Half Day (3hrs)";
+        fullW.innerHTML = "Full Day";
 
-            costHR.innerHTML = cost.reservation.half;
-            costFR.innerHTML = cost.reservation.full;
-            costHW.innerHTML = cost.walkIn.half;
-            costFW.innerHTML = cost.walkIn.full;
+        costHR.innerHTML = rental.price;
+        costFR.innerHTML = rental.price;
+        costHW.innerHTML = rental.price;
+        costFW.innerHTML = rental.price;
 
-            headRow.appendChild(res);
-            headRow.appendChild(walk);
+        headRow.appendChild(res);
+        headRow.appendChild(walk);
 
-            dayRow.appendChild(halfR);
-            dayRow.appendChild(fullR);
-            dayRow.appendChild(halfW);
-            dayRow.appendChild(fullW);
+        // dayRow.appendChild(halfR);
+        // dayRow.appendChild(fullR);
+        // dayRow.appendChild(halfW);
+        // dayRow.appendChild(fullW);
 
-            costRow.appendChild(costHR);
-            costRow.appendChild(costFR);
-            costRow.appendChild(costHW);
-            costRow.appendChild(costFW);
+        // costRow.appendChild(costHR);
+        // costRow.appendChild(costFR);
+        // costRow.appendChild(costHW);
+        // costRow.appendChild(costFW);
 
-            price.appendChild(headRow);
-            price.appendChild(dayRow);
-            price.appendChild(costRow);
-        });
+        price.appendChild(headRow);
+        // price.appendChild(dayRow);
+        // price.appendChild(costRow);
+        // });
 
         content.appendChild(image);
         content.appendChild(vehicle);
@@ -109,6 +109,8 @@ const displayVehicles = (rentals) => {
 
         vehicleCard.appendChild(content);
     });
+
+    return vehicleCard;
 
 }
 
