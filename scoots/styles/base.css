@@ -190,6 +190,7 @@ main img {
 
 .contract-info {
     float: right;
+    margin-top: 1rem;
 }
 
 .contract-info p {
