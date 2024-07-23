@@ -179,6 +179,12 @@ main img {
     grid-column: 1/2;
 }
 
+#scooters,
+#atvs,
+#jeeps {
+    background: var(--accent-color1);
+}
+
 .tabcontent {
     display: none;
     grid-column: 1/4;

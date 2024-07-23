@@ -11,7 +11,7 @@ const typeS = document.querySelector("#scooter");
 const typeA = document.querySelector("#allterrain");
 const typeJ = document.querySelector("#jeep")
 
-function openTab(tab) {
+function openTab(tab, element, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -24,6 +24,8 @@ function openTab(tab) {
     }
 
     document.getElementById(tab).style.display = "block";
+
+    element.style.background = color;
 }
 
 const displayVehicles = (rentals) => {
