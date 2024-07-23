@@ -97,6 +97,10 @@ main {
     display: none;
 }
 
+#high {
+    font-weight: bold;
+}
+
 #clsbtn {
     background: none;
     border: none;
